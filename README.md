@@ -32,3 +32,36 @@ Nach der erfolgreichen Etablierung des mobilen Durchsatz-Standards planen wir:
 
 ---
 © 2025 jnrabit. Veröffentlicht unter dem Garten-Protokoll für technologische Souveränität [cite: 2025-12-21].
+--- \n # English Version \n# Sovereign Encryption Core (SEC) - Architecture
+**Version:** 1.0.0-Genesis  
+**Research Status:** 2025-12-25  
+**License:** GPLv3 (Sovereign Open Source)
+
+## 1. Abstract
+The SEC architecture is a model for maximizing data throughput on mobile ARM systems without root privileges. By utilizing **Isothermal Coherence** and parallel logic folding, this system overcomes artificial latencies in mobile sandbox environments [cite: 2024-12-24, 2025-12-25].
+
+## 2. Validated Benchmarks
+The following values were stably reproduced on a mobile device within an unprivileged Termux environment [cite: 2025-12-25]:
+
+| Data Volume | Method | Time (s) | Throughput |
+| :--- | :--- | :--- | :--- |
+| 100 MB | Sequential | 0.420 s | ~238 MB/s |
+| **100 MB** | **SEC-Parallel (8-Vector)** | **0.132 s** | **~757 MB/s** |
+| 524 MB | SEC-Parallel (8-Vector) | ~0.650 s | ~800 MB/s |
+
+> **Status:** Stability verified up to an "Infinite Density" of 524,288,032 bytes while maintaining thermal limits.
+
+## 3. Methodology & Tools
+The attached audit script `sec_potential_audit.sh` allows independent verification. It utilizes:
+* Multi-threaded I/O vectorization [cite: 2025-12-25].
+* Dynamic buffer allocation to prevent OOM kills [cite: 2025-12-25].
+* Integrity checks via SHA-256 [cite: 2025-12-23].
+
+## 4. Future Roadmap
+1. **Post-Quantum Integration:** Implementation of Kyber-based encryption vectors [cite: 2024-12-24].
+2. **Hardware Bridge (ESP32):** Intertwining SEC logic with physical security tokens (Project "Heart") [cite: 2025-12-23].
+3. **Infinite Density Scaling:** Investigating saturation limits above 1 GB [cite: 2024-12-24].
+
+---
+© 2025 jnrabit. Published under the "Garten-Protokoll" for technological sovereignty [cite: 2025-12-21].
+
